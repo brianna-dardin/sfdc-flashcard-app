@@ -13,13 +13,13 @@ Are you interested in deploying the app in your own Salesforce environment? Foll
 ### Pre-Deployment Steps
 
 1. Download this repository either as a zip file or as a local clone.
-* Enable Digital Experiences and choose a subdomain
-* Go to Setup -> Digital Experiences -> Settings and check "Enable ExperienceBundle Metadata API" and check "Let customer users access notes and attachments"
-* Go to the [reCaptcha Admin Console](https://www.google.com/recaptcha/admin/create) to set up the reCaptcha for the community domain 
-* Use the full domain from step 2 (should end with "force.com" unless you're using a custom domain)
-* Select reCaptcha Type -> reCaptcha v2 -> Invisible reCaptcha Badge
-* Open src\experiences\Chinese_Flashcards1\config\mainAppPage.json and look at the ```headMarkup``` tag. Search for ```sitekey``` and put in the site key
-* Open src\classes\CaptchaController.cls and put in the secret key where it says ```private static String secretKey =```
+2. Enable Digital Experiences and choose a subdomain
+3. Go to Setup -> Digital Experiences -> Settings and check "Enable ExperienceBundle Metadata API" and check "Let customer users access notes and attachments"
+4. Go to the [reCaptcha Admin Console](https://www.google.com/recaptcha/admin/create) to set up the reCaptcha for the community domain 
+5. Use the full domain from step 2 (should end with "force.com" unless you're using a custom domain)
+6. Select reCaptcha Type -> reCaptcha v2 -> Invisible reCaptcha Badge
+7. Open src\experiences\Chinese_Flashcards1\config\mainAppPage.json and look at the ```headMarkup``` tag. Search for ```sitekey``` and put in the site key
+8. Open src\classes\CaptchaController.cls and put in the secret key where it says ```private static String secretKey =```
 
 ### Deployment Steps
 
