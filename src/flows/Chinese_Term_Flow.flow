@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Guest_Term_Email</name>
+        <label>Guest Term Email</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <actionName>Chinese_Term__c.New_Guest_Chinese_Term</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <name>Guest_Term</name>
+        <label>Guest Term</label>
+        <locationX>182</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Guest_Created</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsGuest</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Guest_Term_Email</targetReference>
+            </connector>
+            <label>Guest Created</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>New_or_Level_Changed</name>
+        <label>New or Level Changed</label>
+        <locationX>468</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>New_Term</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Level</targetReference>
+            </connector>
+            <label>New Term</label>
+        </rules>
+        <rules>
+            <name>Level_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LevelChanged</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Level_Fields</targetReference>
+            </connector>
+            <label>Level Changed</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>IsGuest</name>
+        <dataType>Boolean</dataType>
+        <expression>ISPICKVAL( {!$User.UserType}, &quot;Guest&quot; )</expression>
+    </formulas>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>LevelChanged</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+NOT( ISPICKVAL( {!$Record.Level__c}, &quot;1&quot; ) ),
+ISCHANGED( {!$Record.Level__c}  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>PreviousLevel</name>
+        <dataType>String</dataType>
+        <expression>PRIORVALUE( {!$Record.Level__c} )</expression>
+    </formulas>
+    <interviewLabel>Chinese Term Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Chinese Term Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Level</name>
+        <label>Update Level</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>Guest_Term</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Level__c</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Level_Fields</name>
+        <label>Update Level Fields</label>
+        <locationX>490</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Level_Last_Updated__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Previous_Level__c</field>
+            <value>
+                <elementReference>PreviousLevel</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>342</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>New_or_Level_Changed</targetReference>
+        </connector>
+        <object>Chinese_Term__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

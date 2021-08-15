@@ -1,0 +1,84 @@
+{
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "521d81ea-a5b0-477b-b82e-8ef88c204359",
+  "label" : "Chinese Term List",
+  "regions" : [ {
+    "id" : "1095bc2f-8c38-465e-8741-452f95d144fe",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "c3ab8d5d-b40c-44b0-bcd2-f92b96763f07",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "6ad00b0b-4249-4962-a416-890942970f25",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Term List"
+          }, {
+            "UUID" : "bbc063a8-4e6c-42f9-ac86-1ea198f9336d",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Term Analysis"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "c3ab8d5d-b40c-44b0-bcd2-f92b96763f07",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:termList",
+          "id" : "4d7a8565-edf8-487a-a9f2-5b2457bceb75",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6ad00b0b-4249-4962-a416-890942970f25",
+        "regionLabel" : "Term List",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:allTermLevels",
+          "id" : "6fcf912c-493d-4222-964c-0009357faf99",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "c:retiredTerms",
+          "id" : "3aab915e-dfa2-44a4-99bb-5f91c0fd804b",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "bbc063a8-4e6c-42f9-ac86-1ea198f9336d",
+        "regionLabel" : "Term Analysis",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "82a8fd36-ddc5-48bf-adfb-d5ad7b7534fd",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ea6e9939-506a-4e16-ad30-6150d15d16b9",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-a0H"
+}

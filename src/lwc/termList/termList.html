@@ -1,0 +1,16 @@
+<template>
+    <div class="container">
+        <div>
+            <div class="slds-text-heading_large slds-float_left slds-m-bottom_large">
+                My Terms
+            </div>
+            <div class="slds-float_right">
+                <lightning-button variant="brand" label="New Term" onclick={newClick} class="slds-m-bottom_large"></lightning-button>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <c-data-table all-data={allData} key-field="termId" columns={columns} page-size={pageSize}></c-data-table>
+    </div>
+</template>

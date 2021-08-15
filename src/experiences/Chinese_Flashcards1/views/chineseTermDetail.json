@@ -1,0 +1,47 @@
+{
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "5623ab53-a0dd-426e-9bf0-6fbe96958b66",
+  "label" : "Chinese Term Detail",
+  "regions" : [ {
+    "id" : "d62596f8-273d-4a06-ad52-97aea61a80d8",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:viewTerm",
+      "id" : "a62670d6-fc8d-4d65-b9bf-5dc1dc376e53",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3774d7d9-0806-4cff-97b7-b1d21f042c3f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "84e15f54-9423-4999-8ddf-c17fb0ea0804",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "78b3e82a-36ee-4619-aba5-6e673668a5bd",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "48d8d94b-e0a7-47d0-ad28-a3025252183b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a0H"
+}

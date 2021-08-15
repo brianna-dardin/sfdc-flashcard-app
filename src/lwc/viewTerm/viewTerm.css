@@ -1,0 +1,8 @@
+.hidden {
+    visibility: hidden;
+}
+
+.activeToggle {
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}

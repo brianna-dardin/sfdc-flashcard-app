@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "80013238-5db6-4cb7-ae2d-1316c1c25e26",
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "configurationTags" : [ ],
+  "id" : "aa866755-a7f7-4079-8529-c4e7ee76cb75",
+  "label" : "Play Flashcards",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-play-flashcards",
+  "type" : "route",
+  "urlPrefix" : "play-flashcards"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "ecf0a576-548a-48ed-8ed0-78dfa62d966f",
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "configurationTags" : [ ],
+  "id" : "f6222176-235a-4d2c-a2fe-e1d0b7e73428",
+  "label" : "Chinese Term Related List",
+  "objectApiName" : "Chinese_Term__c",
+  "routeType" : "relatedlist-a0H",
+  "type" : "route",
+  "urlPrefix" : "chinese-term"
+}

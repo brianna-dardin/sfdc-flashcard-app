@@ -1,0 +1,38 @@
+{
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "ecf0a576-548a-48ed-8ed0-78dfa62d966f",
+  "label" : "Chinese Term Related List",
+  "regions" : [ {
+    "id" : "5550739f-46da-42e3-a8c2-52fc5413bc31",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "b6979d90-7183-4c94-9f3f-360b40a84d5e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2fb7ee7b-bfdc-4c94-8bd4-329fe818a454",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "f17c9e12-ca8c-495a-bb4a-8a76a441b5b8",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-a0H"
+}

@@ -1,0 +1,11 @@
+<template>
+    <template if:true={showGraph}>
+        <c-generic-chart chart-config={chartConfig}></c-generic-chart>
+    </template>
+
+    <template if:false={showGraph}>
+        <div class="slds-text-heading_large">
+            This user doesn't have any Chinese Terms!
+        </div>
+    </template>
+</template>

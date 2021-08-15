@@ -1,0 +1,34 @@
+<template>
+    <div class="slds-text-heading_large slds-text-align_center">
+        {session.deckFront} Session
+    </div>
+
+    <hr>
+
+    <lightning-layout horizontal-align="spread" multiple-rows>
+        <lightning-layout-item padding="around-small" size="6">
+            <lightning-input type="number" name="numSessions" label="Total Number of Cards" readonly value={numCards}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="6">
+            <lightning-input type="text" name="level" label="Levels Included" readonly value={session.levels}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="6">
+            <lightning-input type="number" name="numCorrect" label="Number of Times Correct" readonly value={numCorrect}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="6">
+            <lightning-input type="number" name="pctCorrect" label="Percentage Correct" readonly value={pctCorrect} formatter="percent" step="0.01"></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="6">
+            <lightning-input type="number" name="numIncorrect" label="Number of Times Incorrect" readonly value={numIncorrect}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="6">
+            <lightning-input type="number" name="pctIncorrect" label="Percentage Incorrect" readonly value={pctIncorrect} formatter="percent" step="0.01"></lightning-input>
+        </lightning-layout-item>
+    </lightning-layout>
+
+    <hr>
+
+    <template if:true={hasCards}>
+        <c-data-table all-data={allData} key-field="cardId" columns={columns} page-size={pageSize}></c-data-table>
+    </template>
+</template>

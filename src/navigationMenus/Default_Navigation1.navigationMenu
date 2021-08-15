@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Chinese Flashcards</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation (Flashcards)</label>
+    <navigationMenuItem>
+        <defaultListViewId>My_Terms</defaultListViewId>
+        <label>My Terms</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>Chinese_Term__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Play Flashcards</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/play-flashcards</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>My Sessions</label>
+        <position>3</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>Session__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+</NavigationMenu>

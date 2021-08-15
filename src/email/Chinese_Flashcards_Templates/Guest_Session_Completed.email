@@ -1,0 +1,11 @@
+Session details:
+
+Front: {!Session__c.Deck_Front__c}
+Levels: {!Session__c.Levels__c}
+# New Cards: {!Session__c.Number_of_Cards_Drawn__c}
+
+Total # of Cards: {!Session__c.Total_Number_of_Cards__c}
+Total Correct: {!Session__c.Total_Number_Correct__c}
+Total Incorrect: {!Session__c.Total_Number_Incorrect__c}
+
+{!Session__c.Link}

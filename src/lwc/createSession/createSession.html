@@ -1,0 +1,38 @@
+<template>
+    <div class="slds-text-heading_medium slds-text-align_center">
+        Start New Flashcard Session
+    </div>
+
+    <lightning-combobox
+            name="deckType"
+            label="Front of Card"
+            value={deckType}
+            placeholder="Select Front of Card"
+            options={options}
+            onchange={genericOnChange}
+            required></lightning-combobox>
+
+    <lightning-input 
+            type="number" 
+            name="numberNewCards" 
+            label="How many new cards?" 
+            value={numberNewCards} 
+            onchange={genericOnChange}
+            message-when-step-mismatch="Please only enter whole numbers."
+            step="1"
+            required></lightning-input>
+
+    <div>
+        Total number of new cards available: {cardsAvailable}
+    </div>
+
+    <template for:each={sessionLevels} for:item="level">
+        <div key={level.level}>
+            Number of level {level.level} cards included in this session: {level.amount}
+        </div>
+    </template>
+
+    <div class="slds-m-top_medium slds-text-align_center">
+        <lightning-button variant="brand" label="Start Session" onclick={handleClick}></lightning-button>
+    </div>
+</template>

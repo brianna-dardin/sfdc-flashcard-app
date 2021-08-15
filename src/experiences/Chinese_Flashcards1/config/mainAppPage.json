@@ -1,0 +1,10 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "bd314c32-76fb-4e79-81c7-c37703348ea4",
+  "headMarkup" : "<!--reCaptcha v2 Invisible-->\n<script>\n    var grecaptchaReady = false;\n    var onloadCallback = function(){ grecaptchaReady = true; };\n    var verifyCallback = function(token) {\n        document.dispatchEvent(new CustomEvent('grecaptchaVerified', {'detail': {response: token }}));\n    };\n    var errorCallback = function() {\n        document.dispatchEvent(new Event('grecaptchaError'));\n    };\n    document.addEventListener('grecaptchaRender', function(e) {   \n        onloadCallback = function() {\n            grecaptchaReady = true;\n            grecaptcha.render(e.detail.element, {\n                'sitekey': '',\n                'callback': verifyCallback,\n                'error-callback': errorCallback,\n                'size': 'invisible',\n                'badge': e.detail.hasOwnProperty('badge') ? e.detail.badge : 'bottomright'\n            });\n        };\n        if (grecaptchaReady) {\n            onloadCallback();\n        }\n    });\n    document.addEventListener('grecaptchaReset', function() {\n        grecaptcha.reset();\n    });\n    document.addEventListener('grecaptchaExecute', function() {\n        grecaptcha.execute();\n    }); \n</script>\n<script src='https://www.google.com/recaptcha/api.js?render=explicit&onload=onloadCallback' async defer></script>",
+  "id" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "Starter Template",
+  "type" : "appPage"
+}

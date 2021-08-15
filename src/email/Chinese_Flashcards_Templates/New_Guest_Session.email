@@ -1,0 +1,7 @@
+Session details:
+
+Front: {!Session__c.Deck_Front__c}
+Levels: {!Session__c.Levels__c}
+# Cards: {!Session__c.Number_of_Cards_Drawn__c}
+
+{!Session__c.Link}

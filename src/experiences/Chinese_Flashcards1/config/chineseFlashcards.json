@@ -1,0 +1,24 @@
+{
+  "forgotPasswordRouteId" : "ebb5ef39-ccdf-49c1-abd3-f23d2cdd25fc",
+  "isAvailableToGuests" : true,
+  "isFilteredComponentsView" : false,
+  "isProgressiveRenderingEnabled" : false,
+  "loginAppPageId" : "04861e4c-29a6-4d45-9171-81e030474192",
+  "mainAppPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "f89612e5-4c80-46d8-9c0b-1a46b57a277c",
+  "trustedSitesForScript" : [ {
+    "id" : "2f6e2fdb-8a7e-4bb2-8b42-add9c72fd3ac",
+    "isActive" : true,
+    "trustedSiteName" : "Google",
+    "trustedSiteUrl" : "https://www.google.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "a4339140-73ab-460b-ab90-fcfb7edb5490",
+    "isActive" : true,
+    "trustedSiteName" : "GStatic",
+    "trustedSiteUrl" : "https://www.gstatic.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

@@ -1,0 +1,25 @@
+<template>
+    <div class="container">
+        <template if:true={showForm}>
+            <c-create-session oncreate={formSubmitHandler} onsessionerror={errorHandler}></c-create-session>
+        </template>
+    
+        <template if:true={showCards}>
+            <c-flashcard card={currentCard} oncorrect={correctHandler} onincorrect={incorrectHandler} oncarderror={errorHandler}></c-flashcard>
+        </template>
+        
+        <template if:true={showStats}>
+            <c-session-stats session={sessionObj}></c-session-stats>
+        </template>
+
+        <template if:true={showError}>
+            <div class="slds-text-heading_large">
+                Error
+            </div>
+            <hr>
+            <div class="slds-text-heading_medium">
+                {errorMsg}
+            </div>
+        </template>
+    </div>
+</template>

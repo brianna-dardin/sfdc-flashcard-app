@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "9bb9fa90-eff6-4c88-98a5-6582e9cef4e2",
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "configurationTags" : [ ],
+  "id" : "171e2fe1-fbe5-4654-bd22-15e06764c0e9",
+  "label" : "Session List",
+  "objectApiName" : "Session__c",
+  "routeType" : "list-a0K",
+  "type" : "route",
+  "urlPrefix" : "session"
+}

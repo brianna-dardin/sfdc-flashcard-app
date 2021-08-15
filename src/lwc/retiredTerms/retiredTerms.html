@@ -1,0 +1,16 @@
+<template>
+    <div class="container">
+        <div class="slds-text-heading_medium slds-text-align_center slds-m-bottom_large">
+            Retired Terms
+        </div>
+
+        <lightning-layout horizontal-align="spread">
+            <lightning-layout-item padding="around-small" size="6">
+                <lightning-input type="number" name="numRetired" label="Number of Retired Terms" readonly value={numRetired}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="6">
+                <lightning-input type="number" name="pctRetired" label="Percent of Terms Retired" readonly value={pctRetired} formatter="percent" step="0.0001"></lightning-input>
+            </lightning-layout-item> 
+        </lightning-layout>
+    </div>
+</template>

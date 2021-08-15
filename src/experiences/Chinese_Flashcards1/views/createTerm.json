@@ -1,0 +1,67 @@
+{
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "d9fbc190-c851-460e-9cda-a27a69d41378",
+  "label" : "Create Term",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "810f97b5-d1ac-46fc-93aa-f4224174b67d",
+          "columns" : [ {
+            "UUID" : "6c5a97ac-e7e7-42e2-ad46-f90f7664edb5",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "810f97b5-d1ac-46fc-93aa-f4224174b67d",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:createTerm",
+          "id" : "d1b47b7e-fad3-444d-89ff-8adbfe7525b5",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6c5a97ac-e7e7-42e2-ad46-f90f7664edb5",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4d0ed213-6dda-4571-9d62-5d0994620809",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Create Term"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "129924b4-5845-4142-8f5f-fc35500b6708",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1bb456af-5d48-42ff-8e0f-c7b3e11beac5",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-create-term"
+}

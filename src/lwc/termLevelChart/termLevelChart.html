@@ -1,0 +1,11 @@
+<template>
+    <template if:true={showGraph}>
+        <c-generic-chart chart-config={chartConfig}></c-generic-chart>
+    </template>
+
+    <template if:false={showGraph}>
+        <div class="slds-text-heading_large">
+            This Chinese Term doesn't have any flashcards.
+        </div>
+    </template>
+</template>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Guest_User_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Guest User Sharing</label>
+        <sharedTo>
+            <guestUser>Chinese_Flashcards</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Is_Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Guest_Owned__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

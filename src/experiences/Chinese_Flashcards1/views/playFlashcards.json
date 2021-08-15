@@ -1,0 +1,67 @@
+{
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "80013238-5db6-4cb7-ae2d-1316c1c25e26",
+  "label" : "Play Flashcards",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "40eff9d0-be2a-4ea9-ac88-78993a991f7a",
+          "columns" : [ {
+            "UUID" : "bbcfdb84-1233-40ba-acd1-5d39ebae387e",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "40eff9d0-be2a-4ea9-ac88-78993a991f7a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:playFlashcards",
+          "id" : "cb399ec3-7369-41a1-91d9-32bf0d3265fc",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "bbcfdb84-1233-40ba-acd1-5d39ebae387e",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "50e40756-1e15-47b0-b0f0-966fb6698f89",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Play Flashcards"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "54e0cfc5-64a2-4778-bebb-c8ea218ca8a3",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dbcf9c6f-0eb4-4ee5-8bea-db2bbc56c1d0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-play-flashcards"
+}

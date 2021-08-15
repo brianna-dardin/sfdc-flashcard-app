@@ -1,0 +1,64 @@
+<template>
+    <template if:true={showCard}>
+        <template if:true={showFront}>
+            <article class="slds-card slds-text-align_center" onclick={frontClicked}>
+                <div class="slds-card__body slds-card__body_inner">
+                    <div class="slds-text-heading_large">
+                        <template if:true={characterSession}>
+                            {card.term.character}
+                        </template>
+
+                        <template if:true={pinyinSession}>
+                            {card.term.pinYin}
+                        </template>
+
+                        <template if:true={englishSession}>
+                            {card.term.english}
+                        </template>
+
+                        <template if:true={soundSession}>
+                            <audio controls="controls" src={audioURL}></audio>
+                        </template>
+                    </div>
+                </div>
+            </article>
+        </template>
+
+        <template if:true={showBack}>
+            <article class="slds-card slds-text-align_center">
+                <div class="slds-card__body slds-card__body_inner">
+                    <template if:true={hasCharacter}>
+                        <div class="slds-text-heading_large">
+                            {card.term.character} <br>
+                        </div>
+                    </template>
+
+                    <div class="slds-text-heading_medium">
+                        <template if:true={hasPinyin}>
+                            {card.term.pinYin} <br>
+                        </template>
+                        
+                        <template if:true={hasEnglish}>
+                            {card.term.english} <br><br>
+                        </template>
+
+                        <template if:true={hasSound}>
+                            <audio controls="controls" src={audioURL}></audio>
+                        </template>
+                    </div>
+                </div>
+
+                <footer class="slds-card__footer">
+                    <lightning-layout horizontal-align="space">
+                        <lightning-layout-item padding="around-small">
+                            <lightning-button variant="success" label="I got this correct" onclick={gotCorrect} class="slds-m-left_x-small"></lightning-button>
+                        </lightning-layout-item>
+                        <lightning-layout-item padding="around-small">
+                            <lightning-button variant="destructive" label="I got this wrong" onclick={gotIncorrect} class="slds-m-left_x-small"></lightning-button>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </footer>
+            </article>
+        </template>
+    </template>
+</template>

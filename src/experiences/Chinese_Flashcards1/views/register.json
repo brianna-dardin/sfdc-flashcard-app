@@ -1,0 +1,50 @@
+{
+  "appPageId" : "04861e4c-29a6-4d45-9171-81e030474192",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "6211303a-9958-415a-9c4c-302b4e314ca6",
+  "label" : "Register",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"background-color:white;\">\n    <img src=\"/sfsites/c/resource/PortalLogo\"/><br><br>\n    <p>Please fill out the form below if you are interested in creating an account!</p>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "f9b7bff9-71e9-4599-8609-950d50640566",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "formType" : "Chinese Flashcards Registration",
+        "sendToEmails" : "brianna.dardin@gmail.com",
+        "submittedText" : "Thank you for your inquiry! I will get back to you as soon as possible!"
+      },
+      "componentName" : "c:sendEmail",
+      "id" : "ce982e71-7b66-4ded-81e7-4125c99f4db7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3bb14a5b-abcf-43fb-81e9-cb23dc697ad1",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Register"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "13d09fc0-85c1-47e1-bcdd-ff9958397fe6",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "abf0e02c-ef20-489d-8eab-ba048e651338",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "self-register"
+}

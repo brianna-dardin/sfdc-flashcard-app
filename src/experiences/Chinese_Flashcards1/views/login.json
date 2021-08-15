@@ -1,0 +1,55 @@
+{
+  "appPageId" : "04861e4c-29a6-4d45-9171-81e030474192",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "02af2326-000a-4fd1-b6b6-130e34591127",
+  "label" : "Login",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"background-color:white;\">\n    <img src=\"/sfsites/c/resource/PortalLogo\"/><br><br>\n    <p>Creating your own account is currently not supported. After testing with the public sample data, if you want to use the app for yourself, fill out <a href=\"./SelfRegister\" target=\"_top\" style=\"color:#E68994;\">this form</a> and I will help set it up for you.</p>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "d94bd0dc-0dd2-457e-b3a6-f748a3034722",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "forgotPasswordLabel" : "",
+        "forgotPasswordUrl" : "",
+        "loginButtonLabel" : "Log in",
+        "passwordLabel" : "Password",
+        "selfRegisterLabel" : "",
+        "selfRegisterUrl" : "",
+        "startUrl" : "",
+        "usernameLabel" : "Username"
+      },
+      "componentName" : "salesforceIdentity:loginForm2",
+      "id" : "9cedad2c-ac6e-4060-985c-f8e4ba2845ea",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "64b6bd9b-e68f-475d-9c29-4e963f538740",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "748bb8f2-f4b9-45e0-b93b-923952abfcea",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "234288c5-8ad5-48a8-be26-6e7ca876f904",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "login-home"
+}

@@ -1,0 +1,8 @@
+Chinese term details:
+
+Character: {!Chinese_Term__c.Character__c}
+Pin Yin: {!Chinese_Term__c.Pin_Yin__c}
+English: {!Chinese_Term__c.English__c}
+Sound: {!Chinese_Term__c.Sound_Link__c}
+
+{!Chinese_Term__c.Link}

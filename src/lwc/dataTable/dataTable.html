@@ -1,0 +1,45 @@
+<template>
+    <lightning-datatable
+            key-field={keyField}
+            data={displayData}
+            columns={columns}
+            hide-checkbox-column
+            onsort={updateColumnSorting}
+            sorted-by={sortedBy}
+            sorted-direction={sortedDirection}>
+    </lightning-datatable>
+
+    <template if:true={hasMultiplePages}>
+        <div class="slds-m-top_medium slds-text-align_center">
+            <lightning-button icon-name="utility:left" icon-position="left"
+                                onclick={onFirst} disabled={isFirstPage}></lightning-button>
+
+            <lightning-button icon-name="utility:chevronleft" icon-position="left"
+                            onclick={onPrev} disabled={isFirstPage}></lightning-button>
+
+            <span class="slds-p-horizontal_x-small">
+                <a onclick={processMe} name="1" class={firstPageLinkClass}>1</a>
+            </span>
+
+            <span class="slds-p-horizontal_xxx-small">...</span>
+
+            <template for:each={pageList} for:item="item">
+                <span key={item} class="slds-p-horizontal_x-small">
+                    <a onclick={processMe} name={item.pageNum} class={item.class}>{item.pageNum}</a>
+                </span>
+            </template>
+
+            <span class="slds-p-horizontal_xxx-small">...</span>
+
+            <span class="slds-p-horizontal_x-small">
+                <a onclick={processMe} name={totalPages} class={lastPageLinkClass}>{totalPages}</a>
+            </span>
+
+            <lightning-button icon-name="utility:chevronright" icon-position="right" 
+                                disabled={isLastPage} onclick={onNext}></lightning-button>
+
+            <lightning-button icon-name="utility:right" icon-position="right" 
+                                disabled={isLastPage} onclick={onLast}></lightning-button>
+        </div>
+    </template>
+</template>

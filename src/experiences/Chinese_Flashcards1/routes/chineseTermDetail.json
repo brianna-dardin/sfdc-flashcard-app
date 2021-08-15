@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "5623ab53-a0dd-426e-9bf0-6fbe96958b66",
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "configurationTags" : [ ],
+  "id" : "a2b4d416-2fc1-4639-8afd-3f632ed432b0",
+  "label" : "Chinese Term Detail",
+  "objectApiName" : "Chinese_Term__c",
+  "routeType" : "detail-a0H",
+  "type" : "route",
+  "urlPrefix" : "chinese-term"
+}

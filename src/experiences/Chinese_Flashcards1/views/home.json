@@ -1,0 +1,47 @@
+{
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "314fdc60-611b-4de6-8f5f-289b52b122c9",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "945b6167-a194-4636-a2a9-168ff67caa83",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"font-size:1.5em;\">\n    <p>This flashcard app is based on the Spaced Repetition concept for learning new words (or anything else!) in which each word reviewed gets put into buckets, and every time you successfully remember a word, it gets moved into a higher bucket, so you are shown the word less and less frequently over time, until eventually you've \"mastered\" the word and no longer see it!</p>\n    <br>\n    <p>This app employs a simple implementation of the concept (other apps, such as Anki, have much more complicated algorithms) as laid out in Nicky Case's explanation of the concept found <a href=\"https://ncase.me/remember/\" target=\"_top\" style=\"color:#E68994;\">here</a>.</p>\n    <br>\n    <p>Let's get started!</p>\n    <ol>\n        <li>Click on the \"My Terms\" link at the top to see all the available terms available for a flashcard session!</li>\n        <li>Feel free to add more terms by clicking the \"New\" button on the \"My Terms\" page!</li>\n        <li>Click on the \"Play Flashcards\" link at the top to start playing!</li>\n        <li>Review the previous flashcard sessions by clicking on the \"My Sessions\" link!</li>\n        <li>After testing with the public sample data, if you want to use the app for yourself, fill out <a href=\"./login/SelfRegister\" target=\"_top\" style=\"color:#E68994;\">this form</a> and I will help set it up for you!</li>\n    </ol>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "70a4173c-2983-4962-9b8b-8c3957e207c7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "28888f81-d871-4d09-91cd-c3a748434086",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "09665f3b-ca0f-4645-83d2-f0fc654f47a6",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c07e7b8b-5157-4db0-8111-3ba0b908f68a",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2c0a55cd-c5dc-4c15-9760-5f8925053eec",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

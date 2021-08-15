@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "d9fbc190-c851-460e-9cda-a27a69d41378",
+  "appPageId" : "aed6c835-0b63-4658-9cc9-5c9f7a511d6a",
+  "configurationTags" : [ ],
+  "id" : "f09a8ff8-ed80-4c75-8896-28b1f4abdf21",
+  "label" : "Create Term",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-create-term",
+  "type" : "route",
+  "urlPrefix" : "create-term"
+}
