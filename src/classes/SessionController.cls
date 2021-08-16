@@ -80,7 +80,7 @@ public without sharing class SessionController {
             levelList.add('6');
         }
 
-        if (Math.mod(newSessionNum, 65) == 0) {
+        if (Math.mod(newSessionNum, 16) == 0 && Math.mod(newSessionNum / 16, 2) > 0) {
             levelList.add('7');
         }
 

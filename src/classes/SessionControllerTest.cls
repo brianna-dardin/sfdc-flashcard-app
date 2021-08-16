@@ -40,7 +40,7 @@ private class SessionControllerTest {
 
         Test.startTest();
 
-        List<Integer> testNumbers = new List<Integer>{1,6,12,24,32,65};
+        List<Integer> testNumbers = new List<Integer>{1,6,12,24,32,48};
         for (Integer num : testNumbers) {
             SessionController.getSessionLevels(num);
         }
