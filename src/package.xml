@@ -110,7 +110,7 @@
         <name>LightningComponentBundle</name>
     </types>
     <types>
-        <members>Default_Navigation1</members>
+        <members>Default_NavigationFlashcards</members>
 		<members>Default_User_Profile_Menu</members>
         <name>NavigationMenu</name>
     </types>

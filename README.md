@@ -15,16 +15,18 @@ Are you interested in deploying the app in your own Salesforce environment? Foll
 1. Download this repository either as a zip file or as a local clone.
 2. Enable Digital Experiences and choose a subdomain
 3. Go to Setup -> Digital Experiences -> Settings and check "Enable ExperienceBundle Metadata API" and check "Let customer users access notes and attachments"
-4. Go to the [reCaptcha Admin Console](https://www.google.com/recaptcha/admin/create) to set up the reCaptcha for the community domain 
-5. Use the full domain from step 2 (should end with "force.com" unless you're using a custom domain)
-6. Select reCaptcha Type -> reCaptcha v2 -> Invisible reCaptcha Badge
-7. Open src\experiences\Chinese_Flashcards1\config\mainAppPage.json and look at the ```headMarkup``` tag. Search for ```sitekey``` and put in the site key
-8. Open src\classes\CaptchaController.cls and put in the secret key where it says ```private static String secretKey =```
+4. Go to Setup -> Email -> Deliverability and ensure the Access Level is "All email"
+5. Go to the [reCaptcha Admin Console](https://www.google.com/recaptcha/admin/create) to set up the reCaptcha for the community domain 
+6. Use the full domain from step 2 (should end with "force.com" unless you're using a custom domain)
+7. Select reCaptcha Type -> reCaptcha v2 -> Invisible reCaptcha Badge
+8. Open src\experiences\Chinese_Flashcards1\config\mainAppPage.json and look at the ```headMarkup``` tag. Search for ```sitekey``` and put in the site key
+9. Open src\classes\CaptchaController.cls and put in the secret key where it says ```private static String secretKey =```
 
 ### Deployment Steps
 
-1. Convert the src folder into a zip file. The zip file should include all of the contents of the folder, not the folder itself.
+1. Convert the src folder into a zip file.
 2. Use [Ant Migration Tool](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm) or [Workbench](https://workbench.developerforce.com/login.php) to deploy the zip file.
+3. If you only want to run the test classes contained in this app and not any other test classes in your org, use the following for the "Run Specified Tests" option: ```CaptchaControllerTest,ChangePasswordControllerTest,ChineseTermControllerTest,CommunitiesLandingControllerTest,CommunitiesLoginControllerTest,CommunitiesSelfRegConfirmControllerTest,CommunitiesSelfRegControllerTest,EmailControllerTest,ForgotPasswordControllerTest,SessionControllerTest,SiteLoginControllerTest,SiteRegisterControllerTest,TRIG_SessionHandlerTest```
 
 ### Post-Deployment Steps
 

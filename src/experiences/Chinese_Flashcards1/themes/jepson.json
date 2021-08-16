@@ -125,7 +125,7 @@
             "componentAttributes" : {
               "navAlignment" : "left",
               "navItemThreshold" : 4,
-              "navigationMenuEditorRefresh" : "Default_Navigation1"
+              "navigationMenuEditorRefresh" : "Default_NavigationFlashcards"
             },
             "componentName" : "forceCommunity:themeNav",
             "id" : "fa257d68-0fd9-459c-b0bb-ab3e8c9ceb9a",
@@ -330,7 +330,7 @@
             "componentAttributes" : {
               "navAlignment" : "left",
               "navItemThreshold" : 4,
-              "navigationMenuEditorRefresh" : "Default_Navigation1"
+              "navigationMenuEditorRefresh" : "Default_NavigationFlashcards"
             },
             "componentName" : "forceCommunity:themeNav",
             "id" : "12e826c9-7363-4194-8fbd-5a2589cacf2d",
